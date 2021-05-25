@@ -11,8 +11,9 @@
   top: 0;
 }
 
-@media screen and (max-width: 755px) {
+/*
+@media screen and (max-width: 655px) {
   #no-mobile {
     display: none;
   }
-}
+}*/
