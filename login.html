@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Log-in</title>
+  </head>
+
+  <body>
+    <header class="headbar">
+      <div class="headbar_icon">
+        <span>No Service</span>
+        <i class="fas fa-wifi fa-lg"></i>
+      </div>
+      <span>18:25</span>
+      <div class="headbar_icon">
+        <i class="fas fa-unlock-alt"></i>
+        <span>77%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </header>
+    <main class="login-main">
+      <div class="welcome__txt">
+        <p class="welcome__txt-title">Welcome to Inside-Out Talk</p>
+
+        <span class="welcome__txt-sub">If you have a Account,</span>
+        <span class="welcome__txt-sub">log in with your email</span>
+      </div>
+
+      <form action="friend.html" method="get">
+        <input class="login-inform" required type="email" placeholder="Email" />
+        <input
+          class="login-inform"
+          required
+          minlength="8"
+          type="password"
+          placeholder="password"
+        />
+
+        <input class="login-inform-submit" type="submit" value="Log In" />
+
+        <span>Don't enter your real email</span>
+      </form>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

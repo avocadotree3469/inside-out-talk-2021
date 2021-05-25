@@ -1,0 +1,30 @@
+.setting-box {
+  margin-bottom: 2px;
+  height: 60px;
+  padding: 10px var(--horizontal);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  border-bottom: solid var(--li_gray);
+  position: relative;
+}
+
+.setting-box > div {
+  position: absolute;
+  right: 10px;
+}
+
+.setting-box > span {
+  padding-left: 28px;
+  font-size: 18px;
+}
+
+.setting-box:last-child {
+  margin-bottom: 60px;
+}
+
+.setting-box:hover i {
+  animation: rotateCogY 0.8s linear infinite;
+}

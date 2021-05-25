@@ -1,0 +1,28 @@
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+@import "reset.css";
+@import "valuables.css";
+
+/*component*/
+@import "component/headbar.css";
+@import "component/screen-name.css";
+@import "component/navigation.css";
+@import "component/user-info.css";
+@import "component/friends-info.css";
+@import "component/alert.css";
+@import "component/codebox.css";
+@import "component/upside-small-bar.css";
+
+/*screen*/
+@import "screen/login.css";
+@import "screen/friend.css";
+@import "screen/chats.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/setting.css";
+@import "screen/chat-char.css";
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Jua", sans-serif;
+}

@@ -1,0 +1,104 @@
+.recommended {
+  padding-left: var(--horizontal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  border-bottom: var(--gray) solid;
+}
+
+.recommended__bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+  margin-right: 10px;
+}
+
+.recommended-friend {
+  padding: 10px 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  border-bottom: solid var(--li_gray);
+  position: relative;
+}
+
+.recommended-friend > i {
+  position: absolute;
+  right: 10px;
+}
+
+.recommended-friend > img {
+  height: var(--nor__img);
+  width: var(--nor__img);
+  background-color: rgb(241, 216, 241);
+  border-radius: 29px;
+}
+
+.recommended-friend > span {
+  padding-left: 28px;
+  font-size: 18px;
+}
+
+.recommended-friend:last-child {
+  border: none;
+  margin-bottom: 5px;
+}
+
+.movie-character__bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px 20px var(--horizontal);
+}
+
+.movie-character-chat {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px var(--horizontal);
+  margin-bottom: 20px;
+}
+.movie-character-chat:last-child {
+  margin-bottom: 60px;
+}
+
+.movie-character-chat__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.movie-character-chat__txt-title {
+  font-size: 25px;
+}
+
+.movie-character-chat__txt-hash {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+}
+
+.movie-character-chat__txt-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.movie-character-chat__txt-info-state {
+  color: violet;
+  border-left: solid;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.movie-character-chat > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.movie-character-chat__txt-info > div {
+  height: var(--small__img);
+  width: var(--small__img);
+  border-radius: 27px;
+}

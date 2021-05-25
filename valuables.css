@@ -1,0 +1,8 @@
+:root {
+  --horizontal: 25px;
+  --gray: rgba(0, 0, 0, 0.4);
+  --li_gray: rgba(0, 0, 0, 0.2);
+  --big__img: 100px;
+  --nor__img: 80px;
+  --small__img: 60px;
+}

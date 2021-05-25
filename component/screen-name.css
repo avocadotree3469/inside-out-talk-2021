@@ -1,0 +1,32 @@
+.screen-name {
+  margin: 28px var(--horizontal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.screen-name > span {
+  font-size: 29px;
+}
+
+.screen-name__icon > a,
+.screen-name__icon > i {
+  padding-left: 8px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+.screen-name__icon > i:hover {
+  animation: rotateCog 1s linear infinite;
+}
+
+.screen-name__icon > a > i:hover {
+  animation: rotateCog 1s linear infinite;
+}

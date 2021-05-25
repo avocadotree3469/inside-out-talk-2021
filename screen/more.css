@@ -1,0 +1,8 @@
+.more-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-main > main:last-child {
+  margin-bottom: 50px;
+}

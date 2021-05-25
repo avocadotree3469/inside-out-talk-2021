@@ -1,0 +1,149 @@
+.char-name-bar {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px;
+  padding: 0px var(--horizontal);
+  position: fixed;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.chat-header {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.friend-chat {
+  margin-top: 10px;
+  display: flex;
+}
+
+.friend-chat:last-child {
+  margin-bottom: 50px;
+}
+
+.chat-date {
+  padding-top: 70px;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 8px;
+}
+.chat-date-box {
+  position: relative;
+  right: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(250, 221, 226);
+}
+
+.friend-chat__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--small__img);
+  width: var(--small__img);
+  background-color: thistle;
+  border-radius: 20px;
+  margin: 0 8px 0 10px;
+}
+
+.friend-chat-content-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.friend-chat-content-box__txt {
+  margin: 10px 4px 0 0;
+  padding: 20px 10px;
+  background-color: rgba(136, 166, 223, 0.5);
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+
+.friend-chat-content-box-time {
+  font-size: 10px;
+  color: var(--gray);
+  margin-right: 10px;
+}
+
+.user-chat > div {
+  margin: 10px 10px 0 4px;
+  padding: 20px 10px;
+  background-color: #facccf;
+
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  order: 1;
+}
+
+.user-chat > .friend-chat-content-box-time {
+  order: 0;
+  padding-left: 38px;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(241, 216, 241, 0.7);
+}
+
+.keyboard > i {
+  margin: 0 10px;
+}
+
+.keyboard > input {
+  width: 60%;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.keyboard:focus-within i {
+  opacity: 0;
+}
+
+.keyboard:focus-within input {
+  width: 98vw;
+  transition: 1s ease-in-out;
+  transform: translateX(-10px);
+}
+
+@keyframes friendchatAnimation {
+  from {
+    transform: translateX(-15px);
+    opacity: 0.4;
+  }
+  to {
+    transform: none;
+  }
+}
+.friend-chat-content-box {
+  animation: friendchatAnimation 1.2s linear forwards;
+}
+
+@keyframes UserchatAnimation {
+  from {
+    transform: translateX(20px);
+    opacity: 0.2;
+  }
+  to {
+    transform: none;
+  }
+}
+.user-chat {
+  animation: UserchatAnimation 1s linear forwards;
+}

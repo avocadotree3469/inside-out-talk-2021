@@ -1,0 +1,24 @@
+.user-info {
+  box-sizing: border-box;
+  padding-left: var(--horizontal);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: solid var(--gray);
+  font-size: 20px;
+}
+
+.user-info__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--big__img);
+  width: var(--big__img);
+  background-color: thistle;
+  border-radius: 40px;
+}
+
+.user-info__txt {
+  padding-left: 28px;
+}
