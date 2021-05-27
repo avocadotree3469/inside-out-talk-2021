@@ -12,7 +12,6 @@
 @import "component/alert.css";
 @import "component/codebox.css";
 @import "component/upside-small-bar.css";
-@import "component/no-mobile.css";
 
 /*screen*/
 @import "screen/login.css";
